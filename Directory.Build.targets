@@ -1,0 +1,6 @@
+<Project>
+  <Target Name="ValidateVintageStoryDirectory" BeforeTargets="ResolveAssemblyReferences"
+          Condition="!Exists('$(VSDir)/VintagestoryAPI.dll')">
+    <Error Text="Set VINTAGE_STORY or pass -p:VSDir to your Vintage Story 1.22.7 installation directory. Game assemblies are not distributed with this project." />
+  </Target>
+</Project>

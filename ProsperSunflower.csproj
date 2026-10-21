@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><GenerateDependencyFile>false</GenerateDependencyFile><VSDir Condition="'$(VSDir)' == ''">$(VINTAGE_STORY)</VSDir></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(VSDir)/Lib/Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSSurvivalMod"><HintPath>$(VSDir)/Mods/VSSurvivalMod.dll</HintPath><Private>false</Private></Reference>
+    <Compile Remove="tests/**/*.cs" />
+    <Reference Include="VintagestoryAPI"><HintPath>$(VSDir)/VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VintagestoryLib"><HintPath>$(VSDir)/VintagestoryLib.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(VSDir)/Lib/0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

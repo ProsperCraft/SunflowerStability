@@ -1,0 +1,1 @@
+{"type":"code","modid":"prospersunflower","name":"ProsperCraft Sunflower Stability","authors":["ProsperCraft"],"version":"1.0.1","side":"universal","requiredOnClient":true,"requiredOnServer":true,"description":"A sunflower planted in a large planter restores temporal stability within 10 blocks in every direction between storms.","dependencies":{"game":"1.22.7"}}
